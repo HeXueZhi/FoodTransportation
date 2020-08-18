@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Food Transportation DApp</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+  <script src="./build/app.js"></script>
+</head>
+<body class="container">
+  <h1>食品物流溯源系统</h1>
+<br> <label for="contractAddress">食品信息地址:</label> <input type="text" class="form-control" id="contractAddress" placeholder="Scan address or create a new contract"></input>
+<br> <label for="locationName">食品名称:</label> <input type="text" class="form-control" id="foodName" placeholder="Food name"></input>
+<br> <label for="locationName">位置名称:</label> <input type="text" class="form-control" id="locationName" placeholder="Location name"></input>
+<br> <label for="locationName">运输员:</label> <input type="text" class="form-control" id="personName" placeholder="Person name"></input>
+
+
+<br> <br>
+<button class="btn btn-primary" id="createContract" onclick="App.createContract()">添加新食品</button>
+
+<button class="btn btn-primary" id="addNewLocation" onclick="App.addNewLocation()">添加食品位置信息</button>
+
+<button class="btn btn-primary" id="getCurrentLocation" onclick="App.getCurrentLocation()">获取当前食品所有信息</button>
+<br> <br>
+
+
+<!-- <textarea id="textArea" rows="15" cols="100" ></textarea> -->
+
+
+
+<!-- <table class="table table-hover">
+  ...
+</table> -->
+
+<div class="bs-example" style="border: 1.4px solid #dddddd;">
+  
+  <div id="table_foodName" style="font-size: 18px;margin-left: 9px;"></div>
+  
+  <table class="table table-hover" id="tb">
+    <thead>
+      <tr>
+        <!-- <th>Food Name</th> -->
+        <th>Location Name</th>
+        <th>Person Name</th>
+        <th>Time</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Larry</td>
+        <td>the Bird</td>
+      </tr> -->
+    </tbody>
+  </table>
+</div>
+
+
+</body>
+</html>
+
+
